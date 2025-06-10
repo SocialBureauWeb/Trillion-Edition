@@ -37,6 +37,7 @@ export default function Section3() {
           align-items: center;
           justify-content: center;
           padding: 40px;
+          min-height: 60vh;
         }
         .ideas-title {
           color: #fff;
@@ -99,7 +100,7 @@ export default function Section3() {
           transition: color 0.18s;
         }
         .card-read:hover {
-          color: #C8FF00;
+          transform: translateX(5px);
         }
         .arrow {
           display: inline-block;
@@ -128,7 +129,7 @@ export default function Section3() {
           padding: 1.3rem 1.5rem;
         }
         .ideas-btn:hover {
-          background: #C8FF00;
+          transform: translateX(5px);
           color: #000;
           box-shadow: 0 4px 24px 0 rgba(200,255,0,0.14);
         }

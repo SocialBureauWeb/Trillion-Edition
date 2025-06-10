@@ -146,7 +146,7 @@ function Header() {
       <div className="te-row" style={styles.cardsRow}>
         <div className="te-card" style={styles.card} tabIndex={0}>
           <span style={styles.cardIcon} role="img" aria-label="Social Bureau">
-            <svg height="36" width="40" fill="#fff" viewBox="0 0 20 20"><path d="M10 10.5A3.5 3.5 0 1 0 10 3a3.5 3.5 0 0 0 0 7.5zm0 2c-3.33 0-6 1.34-6 3v1A1.5 1.5 0 0 0 5.5 18h9a1.5 1.5 0 0 0 1.5-1.5v-1c0-1.66-2.67-3-6-3z"></path></svg>
+            <img style={{height:100}} src="assets/sblogo.png" alt="SBLogo" />
           </span>
           <div style={styles.cardTitle}>Social Bureau</div>
           <div style={styles.cardDesc}>
@@ -155,7 +155,7 @@ function Header() {
         </div>
         <div className="te-card" style={styles.card} tabIndex={0}>
           <span style={styles.cardIcon} role="img" aria-label="Rev Bureau">
-            <svg height="36" width="36" fill="#fff" viewBox="0 0 20 20"><path d="M3 2.75A.75.75 0 0 1 3.75 2h12.5a.75.75 0 0 1 .75.75v14.5a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V2.75zm1.5.75v13H15.5v-13H4.5zm2.25 2.5a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75zm0 3a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75zm0 3a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75z"></path></svg>
+                        <img style={{height:100}} src="assets/rblogo.png" alt="SBLogo" />
           </span>
           <div style={styles.cardTitle}>Rev Bureau</div>
           <div style={styles.cardDesc}>
