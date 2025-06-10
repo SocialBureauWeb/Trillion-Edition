@@ -2,7 +2,6 @@ import React from "react";
 
 const styles = {
   root: {
-    minHeight: "100vh",
     background: "#000",
     color: "#fff",
     display: "flex",
