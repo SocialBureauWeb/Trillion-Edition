@@ -88,7 +88,7 @@ const styles = {
 const extraCss = `
 @media (max-width: 1150px) {
   .tos-row { flex-direction: column !important; gap: 24px !important; align-items: center !important; }
-  .tos-card { max-width: 500px !important; width: 100% !important;}
+  .tos-card { max-width: 500px !important; }
 }
 @media (max-width: 800px) {
   .tos-title { font-size: 3em !important; margin-top: 36px !important; }

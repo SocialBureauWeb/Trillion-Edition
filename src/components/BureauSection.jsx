@@ -32,7 +32,6 @@ const styles = {
   },
   card: {
   flex: "1 1 430px",
-  minWidth: "320px",
   maxWidth: "420px",
   background: "rgba(20,20,20,0.96)",
   borderRadius: "32px",

@@ -12,7 +12,7 @@ const styles = {
     justifyContent: "flex-start",
     fontFamily: "Inter, Arial, sans-serif",
     boxSizing: "border-box",
-    padding: "0 80px",
+    padding: "0 50px",
     margin: 0,
   },
   headline: {
@@ -129,7 +129,7 @@ const extraCss = `
   .founder-img { width: 64px !important; height: 64px !important; }
 }
 @media (max-width: 600px) {
-  .headline1, .headline2 { font-size: 2.1em !important; }
+  .headline1, .headline2 { font-size: 3em !important; }
   .subtitle { font-size: 1.2em !important; }
   .founders-card { padding: 20px 2vw 20px 2vw!important;  !important;}
   .founders-row { flex-direction: column !important; gap: 20px !important; }
