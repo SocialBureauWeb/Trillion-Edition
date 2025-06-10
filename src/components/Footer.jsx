@@ -73,7 +73,6 @@ export default function Footer() {
           padding: 0 24px;
         }
         .te-footer-links {
-          flex: 1 1 180px;
           display: flex;
           gap: 40px;
           align-items: center;
@@ -90,7 +89,6 @@ export default function Footer() {
           color: #fff;
         }
         .te-footer-title {
-          flex: 1 1 400px;
           font-family:'Playfair Display',serif;
           margin: 5rem 0;
           text-align: center;
@@ -112,7 +110,6 @@ export default function Footer() {
           border-radius: 2px;
         }
         .te-footer-socials {
-          flex: 1 1 180px;
           display: flex;
           gap: 24px;
           justify-content: flex-end;
