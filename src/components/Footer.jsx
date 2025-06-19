@@ -11,8 +11,8 @@ export default function Footer() {
             <div className="te-footer-underline" />
           </div>
           <div className="te-footer-links">
-            <a href="#" className="te-footer-link">Social Bureau</a>
-            <a href="#" className="te-footer-link">Rev Bureau</a>
+            <a href="#" className="te-footer-link">SocialBureau</a>
+            <a href="#" className="te-footer-link">RevoBureau</a>
           </div>
           
           <div className="te-footer-socials">

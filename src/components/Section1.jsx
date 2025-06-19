@@ -172,7 +172,7 @@ function Section1() {
                 className="founder-img"
                 style={styles.founderImg}
             />
-            <div className="founder-name" style={styles.founderName}>Founder 1</div>
+            <div className="founder-name" style={styles.founderName}>Alen Jacob</div>
             <div className="founder-title" style={styles.founderTitle}>CTO &amp; Co-Founder</div>
             <a
               href="https://www.linkedin.com/"
@@ -191,7 +191,7 @@ function Section1() {
           <div
             className="founder"
             style={{ ...styles.founder, cursor: 'pointer' }}
-            onClick={() => window.open("https://hbhyrycu.gensparkspace.com", "_blank")}
+            onClick={() => window.open("https://www.linkedin.com/in/sham-kumar-s-350525203", "_blank")}
             role="button"
             tabIndex={0}
             >
@@ -201,10 +201,10 @@ function Section1() {
               className="founder-img"
               style={styles.founderImg}
             />
-            <div className="founder-name" style={styles.founderName}>Founder 2</div>
+            <div className="founder-name" style={styles.founderName}>Sham Kumar S</div>
             <div className="founder-title" style={styles.founderTitle}>CEO &amp; Co-Founder</div>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sham-kumar-s-350525203"
               className="founder-link"
               style={styles.founderLink}
               target="_blank"

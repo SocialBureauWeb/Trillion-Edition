@@ -3,6 +3,7 @@ import React from "react";
 const styles = {
   root: {
     padding: "5rem 0",
+    position: "relative",
     background: "#000",
     color: "#fff",
     display: "flex",
@@ -13,6 +14,24 @@ const styles = {
     boxSizing: "border-box",
     overflowX: "hidden",
   },
+  video: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    zIndex: 0,
+  },
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: "rgba(0, 0, 0, 0.5)", // semi-transparent black
+    zIndex: 1,
+  },
   title: {
     fontFamily: "Georgia, serif",
     fontWeight: 800,
@@ -21,11 +40,11 @@ const styles = {
     marginTop: "90px",
     marginBottom: "56px",
     letterSpacing: 0,
+    zIndex: 2,
   },
   blueBox: {
     width: "100%",
     maxWidth: "1700px",
-    background: "rgba(0, 0, 0, 0.9)",
     borderRadius: "36px",
     padding: "56px 4vw",
     display: "flex",
@@ -33,7 +52,7 @@ const styles = {
     alignItems: "center",
     boxSizing: "border-box",
     margin: "0 auto",
-    boxShadow: "0 8px 60px #001c",
+    zIndex: 2,
   },
   row: {
     display: "flex",
@@ -47,9 +66,8 @@ const styles = {
     flex: "1 1 0px",
     minWidth: "300px",
     maxWidth: "400px",
-    background: "rgba(0, 0, 0, 0.9)",
+    background: "rgba(0, 0, 0, 0.39)",
     borderRadius: "24px",
-    border: "1.5px solid #234",
     boxShadow: "0 8px 60px #000c",
     padding: "44px 40px 34px 40px",
     margin: "0",
@@ -60,11 +78,13 @@ const styles = {
     position: "relative",
     willChange: "transform, box-shadow",
     backdropFilter: "blur(0.5px)",
+    zIndex: 2,
   },
   icon: {
     height: "48px",
     width: "48px",
     marginBottom: "28px",
+    zIndex: 2,
   },
   cardTitle: {
     fontWeight: 700,
@@ -116,6 +136,12 @@ export default function Section2() {
   return (
     <div style={styles.root}>
       <style>{extraCss}</style>
+      <video autoPlay muted loop playsInline style={styles.video}>
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Black overlay */}
+      <div style={styles.overlay}></div>
       <div className="tos-title" style={styles.title}>Trillion&apos;s Operating System</div>
       <div className="tos-bluebox" style={styles.blueBox}>
         <div className="tos-row" style={styles.row}>

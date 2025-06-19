@@ -7,13 +7,17 @@ import Section3 from './components/Section3'
 import Media from './components/Media'
 import Subscribe from './components/Subscribe'
 import Footer from './components/Footer'
+import Services from './components/Services'
+// import ScrollVideo from './components/ScrollVideo'
 function App() {
   return (
     <>
-    <div>
+      
+      <div>
+        {/* <ScrollVideo/> */}
       <Header/>
-      <Section1/>
       <BureauSection/>
+      <Section1/>
       <Section2/>
       <Section3/>
       <Media/>

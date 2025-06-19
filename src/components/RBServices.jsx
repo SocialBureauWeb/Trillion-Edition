@@ -1,0 +1,119 @@
+import React, { useEffect, useRef } from "react";
+
+const services = [
+  {
+    title: "REAL ESTATE",
+    icon: "/assets/4.png",
+    description:"Wearable App Design ⬩ Website Design ⬩ Mobile Experience ⬩ Commerce Experience ⬩ Human–Machine Interface (HMI) ⬩ UI/UX Design",
+  },
+];
+
+const RBServices = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cards = containerRef.current.querySelectorAll(".icon-img");
+
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        card.style.transform = `translate(${x * 0.06}px, ${y * 0.06}px)`;
+      });
+    };
+
+    const container = containerRef.current;
+    container.addEventListener("mousemove", handleMouseMove);
+
+    return () => container.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{
+        backgroundColor: "#000",
+        color: "#fff",
+        textAlign: "center",
+        padding: "60px 20px",
+        fontFamily: "Inter, Arial, sans-serif",
+      }}
+    >
+        <style>
+        {`
+          @keyframes scalePulse {
+            0%, 100% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+          }
+
+          @media (max-width: 600px) {
+            .service-title {
+              font-size: 13px !important;
+            }
+
+            .service-desc {
+              font-size: 11px !important;
+            }
+
+            .icon-img {
+              width: 50px !important;
+              height: 50px !important;
+            }
+
+            .services-grid {
+              flex-direction: column !important;
+              gap: 30px !important;
+            }
+          }
+        `}
+      </style>
+      <img src="assets/rblogo.png" alt="logo" style={{height:"10vh"}}/>
+      <h2 style={{ fontSize: "36px", marginBottom: "60px" }}>
+        SERVICES
+      </h2>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "60px 40px",
+          maxWidth: "1000px",
+          margin: "0 auto",
+        }}
+      >
+        {services.map((service, index) => (
+          <div key={index}>
+            <img
+              src={service.icon}
+              alt={service.title}
+              className="icon-img"
+              style={{
+                width: "60px",
+                height: "60px",
+                marginBottom: "20px",
+                transition: "transform 1s ease-out",
+                animation: "scalePulse 2s infinite ease-in-out"
+              }}
+            />
+            <h4 style={{ fontSize: "15px", fontWeight: "700" }}>
+              {service.title}
+            </h4>
+            <p style={{ fontSize: "12px", color: "rgba(255, 255, 255, 0.81)", marginTop: "10px" }}>
+              {service.description}
+            </p>
+          </div>
+        ))}
+      </div>
+       <button style={{background:"#000", color:"#fff", borderRadius:"20%", padding:"1vw", }} onClick={() => window.open("https://revobureau.in/", "_blank")}>View More</button>
+    </div>
+    
+  );
+};
+
+export default RBServices;
