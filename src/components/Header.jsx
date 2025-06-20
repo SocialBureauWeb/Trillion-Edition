@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const cards = [
-  { logo: "assets/sblogo.png", title: "SocialBureau", site: "https://socialbureau.in" },
-  { logo: "assets/rblogo.png", title: "RevoBureau", site: "https://revobureau.in" },
+  { logo: "assets/sblogo.webp", title: "SocialBureau", site: "https://socialbureau.in" },
+  { logo: "assets/rblogo.webp", title: "RevoBureau", site: "https://revobureau.in" },
 ];
 
 const styles = {
@@ -155,11 +155,10 @@ export default function Header() {
         </div>
 
         <img
-          src="assets/fulllogo.png"
+          src="assets/fulllogo.webp"
           alt="Trillion Edition Logo"
           className="te-logo"
           style={styles.logo}
-          loading="lazy"
         />
         <div style={styles.overlay}></div>
       </div>

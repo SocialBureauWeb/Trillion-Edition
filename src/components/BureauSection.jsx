@@ -140,7 +140,7 @@ const [showRBServices, setShowRBServices] = useState(false);
       <div style={styles.row}>
         <div style={styles.card} tabIndex={0}>
           <img
-            src="assets/sblogo.png"
+            src="assets/sblogo.webp"
             alt="logo"
             style={{ height: "10vh", alignItems: "center" }}
           />
@@ -159,7 +159,7 @@ const [showRBServices, setShowRBServices] = useState(false);
 
         <div style={styles.card} tabIndex={0}>
           <img
-            src="assets/rblogo.png"
+            src="assets/rblogo.webp"
             alt="logo"
             style={{ height: "10vh", alignItems: "center" }}
           />
