@@ -39,6 +39,15 @@ const styles = {
     zIndex: 2,
     objectFit: "contain",
   },
+    overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: "rgba(0, 0, 0, 0.5)", // semi-transparent black
+    zIndex: 1,
+  },
   subHeadline: {
     fontSize: "min(50px)",
     textAlign: "center",
@@ -46,7 +55,7 @@ const styles = {
     fontWeight: 400,
     color: "#fff",
     marginBottom: "0.3em",
-    padding: "0 10px",
+    padding: "10px",
   },
   subHeadlineHighlight: {
     fontWeight: 700,
@@ -70,7 +79,7 @@ styles.bg = {
   justifyContent: "center",
   display: "flex",
   zIndex: 0,
-  width: "100%",
+  width: "100vw",
   overflow: "hidden",
 };
 
@@ -79,7 +88,7 @@ const extraCss = `
  .bg-slideshow-container {
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: -1;
   overflow: hidden;
@@ -90,8 +99,8 @@ const extraCss = `
   bottom: 0;
   left: 0;
   height: 45%;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 10%);
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 90%);
   z-index: 1; /* ensure it's above the slideshow */
   pointer-events: none;
 }
@@ -100,12 +109,15 @@ const extraCss = `
 .bg-slide {
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   opacity: 0;
   animation: fadeSlideshow 15s infinite;
 }
+
 
 .bg1 { background-image: url('assets/bg1.png'); animation-delay: 0s; }
 .bg2 { background-image: url('assets/bg2.png'); animation-delay: 3s; }
@@ -155,6 +167,7 @@ export default function Header() {
           className="te-logo"
           style={styles.logo}
         />
+        <div style={styles.overlay}></div>
       </div>
 
       

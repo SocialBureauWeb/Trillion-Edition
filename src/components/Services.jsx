@@ -32,22 +32,6 @@ const services = [
     description:"Trend-Based Campaigns ⬩ Event-Driven Marketing ⬩ Real-Time Social Engagement ⬩ Seasonal & Cultural Calendar Mapping ",
   },
 ];
-function HoverButton({ onClick, children }) {
-  const [hovered, setHovered] = useState(false);
-  return (
-    <button
-      onClick={onClick}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        ...styles.button,
-        ...(hovered ? styles.buttonHover : {}),
-      }}
-    >
-      {children}
-    </button>
-  );
-}
 const Services = () => {
   const containerRef = useRef(null);
 

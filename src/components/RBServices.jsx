@@ -41,38 +41,7 @@ const RBServices = () => {
         fontFamily: "Inter, Arial, sans-serif",
       }}
     >
-        <style>
-        {`
-          @keyframes scalePulse {
-            0%, 100% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.1);
-            }
-          }
-
-          @media (max-width: 600px) {
-            .service-title {
-              font-size: 13px !important;
-            }
-
-            .service-desc {
-              font-size: 11px !important;
-            }
-
-            .icon-img {
-              width: 50px !important;
-              height: 50px !important;
-            }
-
-            .services-grid {
-              flex-direction: column !important;
-              gap: 30px !important;
-            }
-          }
-        `}
-      </style>
+        
       <img src="assets/rblogo.png" alt="logo" style={{height:"10vh"}}/>
       <h2 style={{ fontSize: "36px", marginBottom: "60px" }}>
         SERVICES
