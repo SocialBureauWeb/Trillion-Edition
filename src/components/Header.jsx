@@ -17,7 +17,7 @@ const styles = {
     justifyContent: "center",
     fontFamily: "Inter, Arial, sans-serif",
     boxSizing: "border-box",
-    paddingBottom: "10rem",
+    paddingBottom: "5rem",
   },
   logo: {
     maxWidth: "min(95vw, 600px)",
