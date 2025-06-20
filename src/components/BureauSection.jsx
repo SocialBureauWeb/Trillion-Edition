@@ -61,7 +61,7 @@ const styles = {
     fontWeight: 700,
     fontSize: "2em",
     marginBottom: "6px",
-    fontFamily: "Inter, Arial, sans-serif",
+    fontFamily: "Averia",
     lineHeight: 1.08,
     zIndex: 2,
   },
@@ -144,7 +144,7 @@ const [showRBServices, setShowRBServices] = useState(false);
             alt="logo"
             style={{ height: "10vh", alignItems: "center" }}
           />
-          <div style={styles.cardTitle}>SocialBureau</div>
+          <div style={styles.cardTitle}>Social<span style={{color:"red"}}>B</span>ureau</div>
           <div style={styles.cardSubtitle}>
             Growth marketing for niche-first founders.
           </div>
@@ -163,7 +163,7 @@ const [showRBServices, setShowRBServices] = useState(false);
             alt="logo"
             style={{ height: "10vh", alignItems: "center" }}
           />
-          <div style={styles.cardTitle}>RevoBureau</div>
+          <div style={styles.cardTitle}>Revo<span style={{color:"#228AFF"}}>B</span>ureau</div>
           <div style={styles.cardSubtitle}>
             Luxury real estate. Curated across borders.
           </div>

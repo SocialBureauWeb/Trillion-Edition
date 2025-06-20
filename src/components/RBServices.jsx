@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 
 const services = [
   {
-    title: "REAL ESTATE",
+    title: "LUXURY AND LIFESTYLE",
     icon: "/assets/4.png",
-    description:"Wearable App Design ⬩ Website Design ⬩ Mobile Experience ⬩ Commerce Experience ⬩ Human–Machine Interface (HMI) ⬩ UI/UX Design",
+    description:"Real Estate ⬩ Cars ⬩ Watches ⬩ Yachts ⬩ Jets ⬩ Motorcycles ⬩ Helicopters ⬩ Jewelry ⬩ Collectibles ⬩ Rentals ⬩ Journal",
   },
 ];
 
@@ -79,7 +79,7 @@ const RBServices = () => {
           </div>
         ))}
       </div>
-       <button style={{background:"#000", color:"#fff", borderRadius:"20%", padding:"1vw", }} onClick={() => window.open("https://revobureau.in/", "_blank")}>View More</button>
+       <button style={{background:"#000", color:"#fff", borderRadius:"20%", padding:"1vw", }} >View More</button>
     </div>
     
   );
