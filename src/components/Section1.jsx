@@ -162,7 +162,7 @@ function Section1() {
           <div
             className="founder"
             style={{ ...styles.founder, cursor: 'pointer' }}
-            onClick={() => window.open("https://hbhyrycu.gensparkspace.com", "_blank")}
+            onClick={() => window.open("https://www.linkedin.com/in/alen-jacob-695a99184", "_blank")}
             role="button"
             tabIndex={0}
             >
@@ -175,7 +175,7 @@ function Section1() {
             <div className="founder-name" style={styles.founderName}>Alen Jacob</div>
             <div className="founder-title" style={styles.founderTitle}>CTO &amp; Co-Founder</div>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/alen-jacob-695a99184"
               className="founder-link"
               style={styles.founderLink}
               target="_blank"

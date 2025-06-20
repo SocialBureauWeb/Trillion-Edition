@@ -1,27 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const cards = [
-  { logo: "assets/sblogo.png", title: "SocialBureau", site:"https://socialbureau.in" },
-  { logo: "assets/rblogo.png", title: "RevoBureau", site:"https://revobureau.in" },
+  { logo: "assets/sblogo.png", title: "SocialBureau", site: "https://socialbureau.in" },
+  { logo: "assets/rblogo.png", title: "RevoBureau", site: "https://revobureau.in" },
 ];
-
-const circleItems = [
-  { title: "Branding"},
-  { title: "Experience Design"},
-  { title: "Technology"},
-  { title: "Digital Marketing"},
-  { title: "Narrow Marketing"},
-  { title: "Moment Marketing"},
-  { title: "API Marketing"},
-];
-
-
 
 const styles = {
   root: {
     minHeight: "100vh",
     width: "100vw",
-    background: " #000000",
+    background: "#000000",
     color: "#fff",
     display: "flex",
     flexDirection: "column",
@@ -39,13 +27,13 @@ const styles = {
     zIndex: 2,
     objectFit: "contain",
   },
-    overlay: {
+  overlay: {
     position: "absolute",
     top: 0,
     left: 0,
     width: "100%",
     height: "100%",
-    background: "rgba(0, 0, 0, 0.5)", // semi-transparent black
+    background: "rgba(0, 0, 0, 0.5)",
     zIndex: 1,
   },
   subHeadline: {
@@ -68,83 +56,83 @@ const styles = {
     marginBottom: "48px",
     padding: "0 10px",
   },
+  bg: {
+    position: "relative",
+    minHeight: "90vh",
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    zIndex: 0,
+    width: "100vw",
+    overflow: "hidden",
+  },
 };
 
-
-
-styles.bg = {
-  position: "relative",
-  minHeight: "90vh",
-  alignItems: "center",
-  justifyContent: "center",
-  display: "flex",
-  zIndex: 0,
-  width: "100vw",
-  overflow: "hidden",
-};
+const bgImages = [
+  "assets/bg1.webp",
+  "assets/bg2.webp",
+  "assets/bg3.webp",
+  "assets/bg4.webp",
+  "assets/bg5.webp",
+];
 
 const extraCss = `
+  .bg-slideshow-container {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
 
- .bg-slideshow-container {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
   .bg-slideshow-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 45%;
-  width: 100vw;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 90%);
-  z-index: 1; /* ensure it's above the slideshow */
-  pointer-events: none;
-}
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 45%;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 90%);
+    z-index: 1;
+    pointer-events: none;
+  }
 
+  .bg-slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeSlideshow 15s infinite;
+  }
 
-.bg-slide {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0;
-  animation: fadeSlideshow 15s infinite;
-}
+  .bg-slide:nth-child(1) { animation-delay: 0s; }
+  .bg-slide:nth-child(2) { animation-delay: 3s; }
+  .bg-slide:nth-child(3) { animation-delay: 6s; }
+  .bg-slide:nth-child(4) { animation-delay: 9s; }
+  .bg-slide:nth-child(5) { animation-delay: 12s; }
 
+  @keyframes fadeSlideshow {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    23%  { opacity: 1; }
+    33%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
 
-.bg1 { background-image: url('assets/bg1.png'); animation-delay: 0s; }
-.bg2 { background-image: url('assets/bg2.png'); animation-delay: 3s; }
-.bg3 { background-image: url('assets/bg3.png'); animation-delay: 6s; }
-.bg4 { background-image: url('assets/bg4.png'); animation-delay: 9s; }
-.bg5 { background-image: url('assets/bg5.png'); animation-delay: 12s; }
+  @keyframes te-float {
+    0%   { transform: translateY(0);}
+    50%  { transform: translateY(-30px);}
+    100% { transform: translateY(0);}
+  }
 
-@keyframes fadeSlideshow {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  23%  { opacity: 1; }
-  33%  { opacity: 0; }
-  100% { opacity: 0; }
-}
-
-/* Animate logo: gentle floating up and down */
-@keyframes te-float {
-  0%   { transform: translateY(0);}
-  50%  { transform: translateY(-30px);}
-  100% { transform: translateY(0);}
-}
-.te-logo {
-  animation: te-float 3s ease-in-out infinite;
-  will-change: transform;
-}
+  .te-logo {
+    animation: te-float 3s ease-in-out infinite;
+    will-change: transform;
+  }
 `;
-
 
 export default function Header() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -152,13 +140,18 @@ export default function Header() {
   return (
     <div style={styles.root}>
       <style>{extraCss}</style>
+
       <div style={styles.bg}>
         <div className="bg-slideshow-container">
-          <div className="bg-slide bg1"></div>
-          <div className="bg-slide bg2"></div>
-          <div className="bg-slide bg3"></div>
-          <div className="bg-slide bg4"></div>
-          <div className="bg-slide bg5"></div>
+          {bgImages.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Background ${index + 1}`}
+              className="bg-slide"
+              loading="lazy"
+            />
+          ))}
         </div>
 
         <img
@@ -166,11 +159,11 @@ export default function Header() {
           alt="Trillion Edition Logo"
           className="te-logo"
           style={styles.logo}
+          loading="lazy"
         />
         <div style={styles.overlay}></div>
       </div>
 
-      
       <div style={styles.subHeadline}>
         We Build the Next{" "}
         <span style={styles.subHeadlineHighlight}>Trillion-Dollar Editions</span>

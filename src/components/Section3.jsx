@@ -17,7 +17,7 @@ export default function Section3() {
             "Why Generalist Marketing is Dead"
           </h2>
           <p className="card-desc">
-            A POV by [CEO Name] — Deep dive into why vertical-first marketing strategies outperform broad approaches in today&apos;s competitive landscape.
+            A POV by Sham Kumar S — Deep dive into why vertical-first marketing strategies outperform broad approaches in today&apos;s competitive landscape.
           </p>
           <a className="card-read" href="#">
             Read <span className="arrow">→</span>
