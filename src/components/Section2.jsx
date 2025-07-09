@@ -122,11 +122,6 @@ const styles = {
     color: "#fff",
     marginBottom: "0.5rem",
   },
-  cardText: {
-    color: "#ccc",
-    fontSize: "0.95rem",
-    maxWidth: "250px",
-  }
 };
 
 const extraCss = `

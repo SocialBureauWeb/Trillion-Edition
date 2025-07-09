@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
 
 const styles = {
   root: {
@@ -181,9 +182,7 @@ function Section1() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg style={styles.linkedinIcon} width={16} height={16} fill="#5396d7" viewBox="0 0 24 24">
-                <path d="M4.98 3.5C3.33 3.5 2 4.83 2 6.48c0 1.64 1.33 2.97 2.98 2.97h.02c1.65 0 2.98-1.33 2.98-2.97C7.98 4.83 6.65 3.5 4.98 3.5zM2.4 20.5h5.16V9H2.4v11.5zM9.34 9h4.94v1.56h.07c.69-1.23 2.38-2.53 4.9-2.53 5.24 0 6.2 3.45 6.2 7.94v8.03h-5.17v-7.13c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77v7.25H9.34V9z"/>
-              </svg>
+              <FaLinkedin size={18} color="#5396d7" />
               LinkedIn
             </a>
             </div>
@@ -210,9 +209,7 @@ function Section1() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg style={styles.linkedinIcon} width={16} height={16} fill="#5396d7" viewBox="0 0 24 24">
-                <path d="M4.98 3.5C3.33 3.5 2 4.83 2 6.48c0 1.64 1.33 2.97 2.98 2.97h.02c1.65 0 2.98-1.33 2.98-2.97C7.98 4.83 6.65 3.5 4.98 3.5zM2.4 20.5h5.16V9H2.4v11.5zM9.34 9h4.94v1.56h.07c.69-1.23 2.38-2.53 4.9-2.53 5.24 0 6.2 3.45 6.2 7.94v8.03h-5.17v-7.13c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77v7.25H9.34V9z"/>
-              </svg>
+              <FaLinkedin size={18} color="#5396d7" />
               LinkedIn
             </a>
           </div>

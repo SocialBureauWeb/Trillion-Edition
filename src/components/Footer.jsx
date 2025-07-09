@@ -12,9 +12,6 @@ export default function Footer() {
             <h2>TRILLION EDITION</h2>
             <div className="te-footer-underline" />
           </div>
-          <div className="te-footer-links">
-            <a href="#" className="te-footer-link">SocialBureau</a>
-          </div>
           
           <div className="te-footer-socials">
             <a
@@ -23,7 +20,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
             >
-              <FaLinkedin size={20} color="white" />
+              <FaLinkedin size={25} color="white" />
             </a>
 
             {/* Instagram SVG */}
@@ -31,7 +28,7 @@ export default function Footer() {
                 href="https://www.instagram.com/trillionedition"
                 class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
               >
-                <FaInstagram size={20} color="white"/>
+                <FaInstagram size={25} color="white"/>
               </a>
           </div>
         </div>
@@ -166,8 +163,9 @@ export default function Footer() {
           }
           .te-footer-links,
           .te-footer-socials {
-            justify-content: flex-start;
+            justify-content: center;
             margin-bottom: 12px;
+            margin-top:12px;
           }
           .te-footer-title {
             margin-bottom: 18px;
