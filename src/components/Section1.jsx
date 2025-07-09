@@ -196,7 +196,7 @@ function Section1() {
             tabIndex={0}
             >
             <img
-              src="assets/ceo.png"
+              src="assets/ceo.jpeg"
               alt="Founder 2"
               className="founder-img"
               style={styles.founderImg}

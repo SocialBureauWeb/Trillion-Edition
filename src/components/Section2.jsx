@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCogs } from "react-icons/fa";
 
 const styles = {
   root: {
@@ -29,7 +30,7 @@ const styles = {
     left: 0,
     width: "100%",
     height: "100%",
-    background: "rgba(0, 0, 0, 0.5)", // semi-transparent black
+    background: "rgba(0, 0, 0, 0.7)", // semi-transparent black
     zIndex: 1,
   },
   title: {
@@ -103,6 +104,29 @@ const styles = {
     textAlign: "center",
     maxWidth: "100%",
   },
+  card: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",   // centers horizontally
+    justifyContent: "center", // centers vertically if needed
+    textAlign: "center",
+    padding: "2rem 1rem",
+    // other existing styles...
+  },
+  icon: {
+    marginBottom: "1rem",  // consistent spacing under icons
+  },
+  cardTitle: {
+    fontWeight: "bold",
+    fontSize: "1.25rem",
+    color: "#fff",
+    marginBottom: "0.5rem",
+  },
+  cardText: {
+    color: "#ccc",
+    fontSize: "0.95rem",
+    maxWidth: "250px",
+  }
 };
 
 const extraCss = `
@@ -169,13 +193,7 @@ export default function Section2() {
           </div>
           <div className="tos-card" style={styles.card} tabIndex={0}>
             {/* Rocket SVG */}
-            <svg style={styles.icon} width={48} height={42} viewBox="0 0 48 42" fill="none">
-              <path
-                d="M25 4c6.5 0 12.5 4.7 15 8.3 1.2 1.8 1.5 4.2.3 6.1l-3.7 6.3c-.5.8-1.3 1.4-2.2 1.6l-4.5 1.1-2 5.7c-.3.8-1 1.5-1.9 1.7l-6.2 1.5c-.9.2-1.8-.1-2.4-.7l-4.7-4.7c-.7-.7-1-1.7-.7-2.7l1.8-5.5-4.7-2.2c-.8-.4-1.4-1.1-1.6-2-.2-.9 0-1.9.5-2.6C10.2 11 16.5 4 25 4Z"
-                fill="#fff"
-              />
-              <circle cx="33" cy="12" r="2.5" fill="#000"/>
-            </svg>
+            <FaCogs size={40} color="#fff" style={styles.icon} />
             <div style={styles.cardTitle}>Execution Engine</div>
             <div style={styles.cardText}>
               Full-stack support to launch &amp; grow.

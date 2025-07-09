@@ -64,7 +64,7 @@ const Services = () => {
         padding: "40px 20px",
         fontFamily: "Inter, Arial, sans-serif",
       }}
-      onClick={() => window.open("https://socialbureau.in/", "_blank")}
+      // onClick={() => window.open("https://socialbureau.in/", "_blank")}
     >
       {/* Animation Keyframes & Responsive Styles */}
       <style>
@@ -140,7 +140,9 @@ const Services = () => {
         ))}
 
       </div>
-                          <button style={{background:"#000", color:"#fff", borderRadius:"20%", padding:"1vw",margin:"5v" }} onClick={() => window.open("https://socialbureau.in/", "_blank")}>View More</button>
+                          <button style={{background:"#000", color:"#fff", borderRadius:"20%", padding:"1vw",margin:"5v" }} 
+                          // onClick={() => window.open("https://socialbureau.in/", "_blank")}
+                          >View More</button>
 
     </div>
   );
