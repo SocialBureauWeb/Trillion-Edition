@@ -42,7 +42,6 @@ const styles = {
     fontWeight: 500,
   },
   card: {
-    background: "rgba(16,16,16,0.96)",
     borderRadius: "32px",
     border: "1px solid #222",
     boxShadow: "0 2px 32px #0009",
@@ -67,7 +66,7 @@ const styles = {
   },
   foundersRow: {
     display: "flex",
-    gap: "64px",
+    gap: "30vw",
     justifyContent: "center",
     flexWrap: "wrap",
     marginTop: "0",
@@ -82,10 +81,10 @@ const styles = {
     margin: "0 24px",
   },
   founderImg: {
-    width: "200px",
-    minWidth:"150px",
-    minHeight:"150px",
-    height: "200",
+    width: "20vw",
+    minHeight:"250px",
+    minWidth:"200px",
+    height: "30vw",
     objectFit: "cover",
     marginBottom: "18px",
     boxShadow: "0 2px 16px #0005",
@@ -200,8 +199,8 @@ function Section1() {
               className="founder-img"
               style={styles.founderImg}
             />
-            <div className="founder-name" style={styles.founderName}>Sham Kumar S</div>
-            <div className="founder-title" style={styles.founderTitle}>CEO &amp; Co-Founder</div>
+            <div className="founder-name" style={styles.founderName}>Sham SK</div>
+            <div className="founder-title" style={styles.founderTitle}>CEO, CFO &amp; Co-Founder</div>
             <a
               href="https://www.linkedin.com/in/sham-kumar-s-350525203"
               className="founder-link"
