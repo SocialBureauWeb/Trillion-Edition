@@ -87,7 +87,7 @@ const styles = {
     padding: "0.5rem 1rem",
     borderRadius: "8px",
     fontWeight: "bold",
-    fontSize: "1rem",
+    fontSize: "1.2rem",
     pointerEvents: "none",
   },
   button: {

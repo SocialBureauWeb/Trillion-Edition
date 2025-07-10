@@ -45,7 +45,7 @@ const styles = {
     borderRadius: "32px",
     border: "1px solid #222",
     boxShadow: "0 2px 32px #0009",
-    padding: "44px 32px",
+    padding: "44px 30px",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",
@@ -81,7 +81,7 @@ const styles = {
     margin: "0 24px",
   },
   founderImg: {
-    width: "20vw",
+    width: "25vw",
     minHeight:"250px",
     minWidth:"200px",
     height: "30vw",

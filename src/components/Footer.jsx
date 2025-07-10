@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
           
           <div className="te-footer-socials">
             <a
-              href="https://www.linkedin.com/company/socialbureau-in"
+              href="https://www.linkedin.com/company/trillionedition"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
@@ -29,6 +29,18 @@ export default function Footer() {
                 class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
               >
                 <FaInstagram size={25} color="white"/>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61577852360321"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+              >
+                <FaFacebook size={25} color="white"/>
+              </a>
+              <a
+                href="https://www.youtube.com/@trillionedition"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+              >
+                <FaYoutube size={25} color="white"/>
               </a>
           </div>
         </div>
