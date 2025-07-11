@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="te-footer-bottom">
           <div className="te-footer-contact">
             <span>Contact: </span>
-            <a href="mailto:admin@socialbureau.in" className="te-footer-email">admin@socialbureau.in</a>
+            <a href="mailto:info@trillionedition.com" className="te-footer-email">info@trillionedition.com</a>
           </div>
           <div className="te-footer-copyright">
             © 2024 Trillion Edition. All rights reserved.
