@@ -189,7 +189,7 @@ function Section1() {
           <div
             className="founder"
             style={{ ...styles.founder, cursor: 'pointer' }}
-            onClick={() => window.open("https://www.linkedin.com/in/sham-kumar-s-350525203", "_blank")}
+            onClick={() => window.open("https://shamsk.vercel.app", "_blank")}
             role="button"
             tabIndex={0}
             >

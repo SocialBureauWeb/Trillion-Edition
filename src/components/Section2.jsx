@@ -104,24 +104,6 @@ const styles = {
     textAlign: "center",
     maxWidth: "100%",
   },
-  card: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",   // centers horizontally
-    justifyContent: "center", // centers vertically if needed
-    textAlign: "center",
-    padding: "2rem 1rem",
-    // other existing styles...
-  },
-  icon: {
-    marginBottom: "1rem",  // consistent spacing under icons
-  },
-  cardTitle: {
-    fontWeight: "bold",
-    fontSize: "1.25rem",
-    color: "#fff",
-    marginBottom: "0.5rem",
-  },
 };
 
 const extraCss = `
