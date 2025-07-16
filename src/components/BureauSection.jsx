@@ -236,7 +236,7 @@ function BureauSection() {
     >
       <div style={styles.overlayStyle}>Launching soon</div>
       <img
-        src="assets/techlogo.webp"
+        // src="assets/techlogo.webp"
         alt="TechBureau"
         style={{ height: "10vh", filter: "blur(4px)" }}
       />
@@ -257,7 +257,7 @@ function BureauSection() {
     <div style={getCardStyle()} tabIndex={0} key="card4">
       <div style={styles.overlayStyle}>Launching soon</div>
       <img
-        src="assets/edulogo.webp"
+        // src="assets/edulogo.webp"
         alt="EduBureau"
         style={{ height: "10vh", filter: "blur(4px)" }}
       />

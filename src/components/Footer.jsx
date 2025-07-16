@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/trillionedition"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
             >
               <FaLinkedin size={25} color="white" />
             </a>
@@ -26,19 +26,19 @@ export default function Footer() {
             {/* Instagram SVG */}
               <a
                 href="https://www.instagram.com/trillionedition"
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
               >
                 <FaInstagram size={25} color="white"/>
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61577852360321"
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
               >
                 <FaFacebook size={25} color="white"/>
               </a>
               <a
                 href="https://www.youtube.com/@trillionedition"
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:bg-[#ff0000] hover:scale-105 transition"
               >
                 <FaYoutube size={25} color="white"/>
               </a>
