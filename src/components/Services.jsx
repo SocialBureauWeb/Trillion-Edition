@@ -3,32 +3,32 @@ import React, { useEffect, useRef } from "react";
 const services = [
   {
     title: "EXPERIENCE DESIGN",
-    icon: "/assets/5.png",
+    icon: "/assets/5.webp",
     description:"Wearable App Design ⬩ Website Design ⬩ Mobile Experience ⬩ Commerce Experience ⬩ Human–Machine Interface (HMI) ⬩ UI/UX Design",
   },
   {
     title: "TECHNOLOGY SERVICES",
-    icon: "/assets/2.png",
+    icon: "/assets/2.webp",
     description:"DevOps Consulting ⬩ Data & Analytics ⬩ AI & Machine Learning ⬩ Web Development ⬩ Mobile App Development ⬩ Cloud Services",
   },
   {
     title: "BRANDING SERVICES",
-    icon: "/assets/3.png",
+    icon: "/assets/3.webp",
     description:"Brand Consulting ⬩ Logo Design ⬩ Brand Collateral ⬩ Graphic Design ⬩ 2D / 3D Visualization ⬩ Brand Identity",
   },
   {
     title: "DIGITAL MARKETING SERVICES",
-    icon: "/assets/6.png",
+    icon: "/assets/6.webp",
     description:"Social Media Management ⬩ Performance Marketing ⬩ Search Engine Optimisation (SEO) ⬩ Content Marketing ⬩ Marketing Automation",
   },
   {
     title: "NARROW MARKETING SERVICES",
-    icon: "/assets/1.png",
+    icon: "/assets/1.webp",
     description:"Targeted Account Campaigns ⬩ Precision Lead Generation ⬩ Channel-Specific Outreach",
   },
   {
     title: "MOMENT MARKETING",
-    icon: "/assets/4.png",
+    icon: "/assets/4.webp",
     description:"Trend-Based Campaigns ⬩ Event-Driven Marketing ⬩ Real-Time Social Engagement ⬩ Seasonal & Cultural Calendar Mapping ",
   },
 ];
@@ -100,7 +100,7 @@ const Services = () => {
         `}
       </style>
 
-      <img src="assets/sblogo.webp" alt="logo" style={{ height: "10vh" }} />
+      <img src="assets/sblogo.webp" alt="logo" style={{ height: "15vh" }} />
       <h2 style={{ fontSize: "32px", marginBottom: "40px" }}>
         SERVICES
       </h2>
@@ -130,10 +130,10 @@ const Services = () => {
                 animation: "scalePulse 2s infinite ease-in-out",
               }}
             />
-            <h4 className="service-title" style={{ fontSize: "15px", fontWeight: "700" }}>
+            <h4 className="service-title" style={{ fontSize: "18px", fontWeight: "700" }}>
               {service.title}
             </h4>
-            <p className="service-desc" style={{ fontSize: "12px", color: "rgba(255, 255, 255, 0.81)", marginTop: "10px" }}>
+            <p className="service-desc" style={{ fontSize: "15px", color: "rgba(255, 255, 255, 0.81)", marginTop: "10px" }}>
               {service.description}
             </p>
           </div>

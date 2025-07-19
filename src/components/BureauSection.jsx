@@ -176,10 +176,8 @@ function BureauSection() {
 
   const cards = [
     <div style={getCardStyle()} tabIndex={0} key="card1">
-      <img src="assets/sblogo.webp" alt="logo" style={{ height: "10vh" }} />
-      <div style={styles.cardTitle}>
-        Social<span style={{ color: "red" }}>B</span>ureau
-      </div>
+      <img src="assets/sblogo.webp" alt="logo" style={{ height: "15vh" }} />
+      <img src="assets/SocialBureau.webp" alt="Sb" style={{ height: "5vh" }}/>
       <div style={styles.cardSubtitle}>
         Growth marketing for niche-first founders.
       </div>
