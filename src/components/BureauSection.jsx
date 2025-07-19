@@ -176,8 +176,8 @@ function BureauSection() {
 
   const cards = [
     <div style={getCardStyle()} tabIndex={0} key="card1">
-      <img src="assets/sblogo.webp" alt="logo" style={{ height: "15vh" }} />
-      <img src="assets/SocialBureau.webp" alt="Sb" style={{ height: "5vh" }}/>
+      <img src="assets/sblogo.webp" alt="SocialBureauLogo" style={{ height: "15vh" }} />
+      <img src="assets/SocialBureau.webp" alt="SocialBureauLogo" style={{ height: "5vh" }}/>
       <div style={styles.cardSubtitle}>
         Growth marketing for niche-first founders.
       </div>
@@ -202,7 +202,7 @@ function BureauSection() {
       <div style={styles.overlayStyle}>Launching soon</div>
       <img
         src="assets/rblogo.webp"
-        alt="logo"
+        alt="RevoBureau Logo"
         style={{ height: "10vh", filter: "blur(4px)" }}
       />
       <div style={{ ...styles.cardTitle, filter: "blur(4px)" }}>
@@ -235,7 +235,7 @@ function BureauSection() {
       <div style={styles.overlayStyle}>Launching soon</div>
       <img
         // src="assets/techlogo.webp"
-        alt="TechBureau"
+        alt="TechBureau Logo"
         style={{ height: "10vh", filter: "blur(4px)" }}
       />
       <div style={{ ...styles.cardTitle, filter: "blur(4px)" }}>
@@ -256,7 +256,7 @@ function BureauSection() {
       <div style={styles.overlayStyle}>Launching soon</div>
       <img
         // src="assets/edulogo.webp"
-        alt="EduBureau"
+        alt="EduBureau Logo"
         style={{ height: "10vh", filter: "blur(4px)" }}
       />
       <div style={{ ...styles.cardTitle, filter: "blur(4px)" }}>

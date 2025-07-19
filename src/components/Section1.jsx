@@ -167,7 +167,7 @@ function Section1() {
             >
             <img
                 src="assets/AlenJacob.webp"
-                alt="Founder 1"
+                alt="Alen Jacob"
                 className="founder-img"
                 style={styles.founderImg}
             />
@@ -193,8 +193,8 @@ function Section1() {
             tabIndex={0}
             >
             <img
-              src="assets/ShamSK.jpg"
-              alt="Founder 2"
+              src="assets/ShamSK.webp"
+              alt="Sham SK"
               className="founder-img"
               style={styles.founderImg}
             />

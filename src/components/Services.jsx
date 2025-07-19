@@ -100,7 +100,7 @@ const Services = () => {
         `}
       </style>
 
-      <img src="assets/sblogo.webp" alt="logo" style={{ height: "15vh" }} />
+      <img src="assets/sblogo.webp" alt="SocialBureau Logo" style={{ height: "15vh" }} />
       <h2 style={{ fontSize: "32px", marginBottom: "40px" }}>
         SERVICES
       </h2>

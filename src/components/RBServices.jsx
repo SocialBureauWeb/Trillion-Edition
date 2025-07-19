@@ -42,7 +42,7 @@ const RBServices = () => {
       }}
     >
         
-      <img src="assets/rblogo.webp" alt="logo" style={{height:"10vh"}}/>
+      <img src="assets/rblogo.webp" alt=" RevoBureau Logo" style={{height:"10vh"}}/>
       <h2 style={{ fontSize: "36px", marginBottom: "60px" }}>
         SERVICES
       </h2>
