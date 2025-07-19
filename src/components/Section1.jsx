@@ -166,7 +166,7 @@ function Section1() {
             tabIndex={0}
             >
             <img
-                src="assets/alen.png"
+                src="assets/AlenJacob.png"
                 alt="Founder 1"
                 className="founder-img"
                 style={styles.founderImg}
@@ -193,7 +193,7 @@ function Section1() {
             tabIndex={0}
             >
             <img
-              src="assets/ceo.jpg"
+              src="assets/ShamSK.jpg"
               alt="Founder 2"
               className="founder-img"
               style={styles.founderImg}
